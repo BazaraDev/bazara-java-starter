@@ -4,8 +4,8 @@ import java.util.List;
 
 import org.springframework.stereotype.Service;
 
-import com.bazaratech.starter.adapter.out.repository.MessageRepository;
 import com.bazaratech.starter.application.domain.model.Message;
+import com.bazaratech.starter.repository.MessageRepository;
 
 import lombok.RequiredArgsConstructor;
 

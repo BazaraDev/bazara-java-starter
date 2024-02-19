@@ -1,4 +1,4 @@
-package com.bazaratech.starter.adapter.in.web;
+package com.bazaratech.starter.controller;
 
 import lombok.AllArgsConstructor;
 import lombok.Data;

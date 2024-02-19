@@ -1,4 +1,4 @@
-package com.bazaratech.starter.adapter.out.repository;
+package com.bazaratech.starter.repository;
 
 import java.util.UUID;
 import org.springframework.data.jpa.repository.JpaRepository;
