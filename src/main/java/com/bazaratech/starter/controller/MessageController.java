@@ -42,7 +42,7 @@ public class MessageController {
     @GetMapping
     @ResponseStatus(HttpStatus.OK)
     public List<MessageResponse> getAllMessages() {
-        
+
         return messageService.getAllMessages()
             .stream()
             .map(message -> MessageResponse.builder()
@@ -50,5 +50,17 @@ public class MessageController {
             .message(message.getMessage())
             .build())
             .toList();
+    }
+
+    @GetMapping(value = "/random")
+    @ResponseStatus(HttpStatus.OK)
+    public MessageResponse getRandomMessage() {
+
+        Message message = messageService.getRandomMessage();   
+        
+        return MessageResponse.builder()
+            .uuid(message.getUuid())
+            .message(message.getMessage()).build();
+        
     }
 }
