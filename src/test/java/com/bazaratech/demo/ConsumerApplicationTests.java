@@ -5,9 +5,9 @@ import org.springframework.boot.autoconfigure.SpringBootApplication;
 
 
 @SpringBootApplication
-class DemoApplicationTests {
+class ConsumerApplicationTests {
 	public static void main(String[] args) {
-		SpringApplication.run(DemoApplicationTests.class, args);
+		SpringApplication.run(ConsumerApplicationTests.class, args);
 	}
 
 

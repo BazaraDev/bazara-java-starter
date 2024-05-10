@@ -1,16 +1,18 @@
 spring:
-    datasource:
-        driver-class-name: org.postgresql.Driver
-        password: postgres
-        url: jdbc:postgresql://localhost:5432/postgres
-        username: postgres
-    jpa:
-        hibernate:
-            ddl-auto: validate
+    cloud:
+        openfeign:
+            client:
+                config:
+                    default:
+                        logger-level: FULL
 
-# management:
-#     datadog:
-#         metrics:
-#             export:
-#                 api-key: xxx-xxxx
+
+server:
+    port: 8081
+
+logging:
+    level:
+        org:
+            springframework:
+                web: DEBUG
 
